@@ -51,30 +51,32 @@
             </div>
         </div>
     </header>
-    <div id="contacts">
-        <section class="contacts">
+    <div id="sign_up">
+        <section class="sign_up">
             <div class="container">
-                <div class="contact_wrapper">
-                    <img class="contact_bottom_left" src="./images/contact_bottom_left.svg" alt="">
-                    <img class="contact_bottom_right" src="./images/contact_bottom_right.svg" alt="">
-                    <img class="contact_left_top" src="./images/contact_left_top.svg" alt="">
-                    <img class="contact_right_top" src="./images/contact_right_top.svg" alt="">
-                    <h4>контакты</h4>
-                    <div class="contact_content">
-                        <div class="content_left">
-                            <span>наш телефон</span>
-                            <a href="tel:81234567890">8 (123) 456 78-90</a>
-                            <span>наша почта</span>
-                            <a href="mailto:cansee@gmail.com">cansee@gmail.com</a>
-                        </div>
-                        <div class="content_right">
-                            <span>следите за нами в соц. сетях</span>
-                            <a href="#"><img src="./images/vkontakt_icon.svg" alt="">вконтакте</a>
-                            <a href="#"><img src="./images/instagram_icon.svg" alt="">инстаграм</a>
-                            <a href="#"><img src="./images/telegram_icon.svg" alt="">телеграм</a>
-                        </div>
+                <form class="sign_up_form">
+                    <h4>авторизация</h4>
+                    <div class="names">
+                        <div class="name">
+                            <label for="name">имя:</label>
+                            <input id="name" type="text" placeholder="иван">
+                        </div>    
+                        <div class="surname">
+                            <label for="surname">фамилия:</label>
+                            <input type="text" placeholder="иванов">
+                        </div>    
                     </div>
-                </div>
+                    <div class="password">
+                        <label for="password">пароль:</label>
+                        <input type="password" placeholder="ваш пароль">
+                    </div>
+                    <button class="sign_in_btn" type="submit">Войти<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                        <path d="M2.50098 11.999H16.501M16.501 11.999L13.001 8.99902M16.501 11.999L13.001 14.999" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path opacity="0.5" d="M9.50195 7C9.51395 4.825 9.61095 3.647 10.379 2.879C11.258 2 12.672 2 15.5 2H16.5C19.329 2 20.743 2 21.622 2.879C22.5 3.757 22.5 5.172 22.5 8V16C22.5 18.828 22.5 20.243 21.622 21.121C20.742 22 19.329 22 16.5 22H15.5C12.672 22 11.258 22 10.379 21.121C9.61095 20.353 9.51395 19.175 9.50195 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    <button class="sign_up_btn" type="submit">Регистрация</button>
+                </form>
             </div>
         </section>
     </div>
