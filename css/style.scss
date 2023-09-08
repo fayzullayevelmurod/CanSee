@@ -23,9 +23,167 @@ input,
 label{
     display: inline-block;
 }
-// .container{
-//     border: 1px solid red;
-// }
+.modal_main{
+    overflow-y: scroll;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 12;
+    background: #FFF;
+    box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.25);
+    .modal_content{
+        .modal_header{
+            padding: 25px 30px;
+            border-bottom: 1px solid #DBDBDB;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .modal_header_text{
+            display: flex;
+            align-items: center;
+            h4{
+                color: #444;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -1.04px;
+                text-transform: uppercase;
+                margin-right: 30px;
+                margin-bottom: 0;
+            }
+            button{
+                border: none;
+                background-color: transparent;
+                color: #7D17FF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.64px;
+            }
+        }
+        .close_btn{
+            border: none;
+            background-color: transparent;
+        }
+        .search_wrapper{
+            padding: 0 30px;
+        }
+        .header_search{
+            margin-top: 15px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            border: 1px solid #E8E8E8;
+            padding: 15px 15px 15px 20px;
+            input{
+                width: 100%;
+                border: none;
+                color: #A8A8A8;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                letter-spacing: -0.64px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            label{
+                cursor: pointer;
+            }
+        }
+        .modal_cards{
+            padding: 0 30px;
+            .modal_card{
+                padding: 25px 0;
+                border-bottom: 1px solid #DBDBDB;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 133px;
+                    height: 133px;
+                }
+                .modal_card_text{
+                    h4{
+                        color: #444;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.72px;
+                        text-decoration-line: underline;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        color: #A8A8A8;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.32px;
+                        margin-bottom: 48px;
+                    }
+                    button{
+                        background-color: transparent;
+                        padding: 10px 15px;
+                        color: #A8A8A8;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.32px;
+                        border-radius: 15px;
+                        border: 1px solid #E8E8E8;
+                    }
+                }
+                .modal_price{
+                    h3{
+                        color: #A8A8A8;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.8px;
+                        text-transform: uppercase;
+                    }
+                    h4{
+                        color: #444;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        letter-spacing: -0.8px;
+                        text-transform: uppercase;
+                    }
+                }
+                .modal_icons{
+                    display: flex;
+                    justify-content: center;
+                    gap: 7px;
+                    flex-direction: column;
+                    button{
+                        border: none;
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        background: #F9F9F9;
+                    }
+                }
+            }
+        }
+    }
+}
+.modal_main::-webkit-scrollbar {
+    display: none;
+  }
 .main_container{
     max-width: 1100px;
     padding: 0 20px;
