@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- normalize link -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- bootstrap link -->
@@ -12,9 +14,92 @@
     <title>CanSee</title>
 </head>
 <body>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 100%;">
+            <div class="modal-content">
+                <div class="modal_top">
+                    <h4 id="staticBackdropLabel">корзина</h4>
+                    <button class="" type="button" data-bs-dismiss="modal" aria-label="Close" role="button">
+                        Очистить корзину
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                            <circle cx="22" cy="22" r="21.5" stroke="#444444"/>
+                            <path d="M13 13L31 31" stroke="#444444"/>
+                            <path d="M31 13L13 31" stroke="#444444"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal_center">
+                    <div class="modal_card">
+                        <img src="./images/model_img.png" alt="">
+                        <div class="model_center_content">
+                            <h6>CEF West China 2023</h6>
+                            <p>China Electronics Fair West Show</p>
+                            <button type="button" role="button">Тема выставки</button>
+                        </div>
+                        <div class="model_content_end">
+                            <div>
+                                <h5>Сумма:</h5>
+                                <h6>1990₽</h6>
+                            </div>
+                        </div>
+                        <div class="modal_end">
+                            <div class="modal_delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.33366 4.99996H11.667C11.667 4.55793 11.4914 4.13401 11.1788 3.82145C10.8663 3.50889 10.4424 3.33329 10.0003 3.33329C9.5583 3.33329 9.13438 3.50889 8.82181 3.82145C8.50925 4.13401 8.33366 4.55793 8.33366 4.99996ZM6.66699 4.99996C6.66699 4.1159 7.01818 3.26806 7.6433 2.64294C8.26842 2.01782 9.11627 1.66663 10.0003 1.66663C10.8844 1.66663 11.7322 2.01782 12.3573 2.64294C12.9825 3.26806 13.3337 4.1159 13.3337 4.99996H17.5003C17.7213 4.99996 17.9333 5.08776 18.0896 5.24404C18.2459 5.40032 18.3337 5.61228 18.3337 5.83329C18.3337 6.05431 18.2459 6.26627 18.0896 6.42255C17.9333 6.57883 17.7213 6.66663 17.5003 6.66663H16.7653L16.027 15.2833C15.956 16.1153 15.5753 16.8904 14.9602 17.4552C14.3451 18.02 13.5404 18.3334 12.7053 18.3333H7.29533C6.46025 18.3334 5.65555 18.02 5.04045 17.4552C4.42534 16.8904 4.04464 16.1153 3.97366 15.2833L3.23533 6.66663H2.50033C2.27931 6.66663 2.06735 6.57883 1.91107 6.42255C1.75479 6.26627 1.66699 6.05431 1.66699 5.83329C1.66699 5.61228 1.75479 5.40032 1.91107 5.24404C2.06735 5.08776 2.27931 4.99996 2.50033 4.99996H6.66699ZM12.5003 9.99996C12.5003 9.77894 12.4125 9.56698 12.2562 9.4107C12.1 9.25442 11.888 9.16663 11.667 9.16663C11.446 9.16663 11.234 9.25442 11.0777 9.4107C10.9215 9.56698 10.8337 9.77894 10.8337 9.99996V13.3333C10.8337 13.5543 10.9215 13.7663 11.0777 13.9225C11.234 14.0788 11.446 14.1666 11.667 14.1666C11.888 14.1666 12.1 14.0788 12.2562 13.9225C12.4125 13.7663 12.5003 13.5543 12.5003 13.3333V9.99996ZM8.33366 9.16663C8.11265 9.16663 7.90068 9.25442 7.7444 9.4107C7.58812 9.56698 7.50033 9.77894 7.50033 9.99996V13.3333C7.50033 13.5543 7.58812 13.7663 7.7444 13.9225C7.90068 14.0788 8.11265 14.1666 8.33366 14.1666C8.55467 14.1666 8.76663 14.0788 8.92291 13.9225C9.07919 13.7663 9.16699 13.5543 9.16699 13.3333V9.99996C9.16699 9.77894 9.07919 9.56698 8.92291 9.4107C8.76663 9.25442 8.55467 9.16663 8.33366 9.16663Z" fill="#FF1A1A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_card">
+                        <img src="./images/model_img.png" alt="">
+                        <div class="model_center_content">
+                            <h6>CEF West China 2023</h6>
+                            <p>China Electronics Fair West Show</p>
+                            <button type="button" role="button">Тема выставки</button>
+                        </div>
+                        <div class="model_content_end">
+                            <div>
+                                <h5>Сумма:</h5>
+                                <h6>1990₽</h6>
+                            </div>
+                        </div>
+                        <div class="modal_end">
+                            <div class="modal_delete">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.33366 4.99996H11.667C11.667 4.55793 11.4914 4.13401 11.1788 3.82145C10.8663 3.50889 10.4424 3.33329 10.0003 3.33329C9.5583 3.33329 9.13438 3.50889 8.82181 3.82145C8.50925 4.13401 8.33366 4.55793 8.33366 4.99996ZM6.66699 4.99996C6.66699 4.1159 7.01818 3.26806 7.6433 2.64294C8.26842 2.01782 9.11627 1.66663 10.0003 1.66663C10.8844 1.66663 11.7322 2.01782 12.3573 2.64294C12.9825 3.26806 13.3337 4.1159 13.3337 4.99996H17.5003C17.7213 4.99996 17.9333 5.08776 18.0896 5.24404C18.2459 5.40032 18.3337 5.61228 18.3337 5.83329C18.3337 6.05431 18.2459 6.26627 18.0896 6.42255C17.9333 6.57883 17.7213 6.66663 17.5003 6.66663H16.7653L16.027 15.2833C15.956 16.1153 15.5753 16.8904 14.9602 17.4552C14.3451 18.02 13.5404 18.3334 12.7053 18.3333H7.29533C6.46025 18.3334 5.65555 18.02 5.04045 17.4552C4.42534 16.8904 4.04464 16.1153 3.97366 15.2833L3.23533 6.66663H2.50033C2.27931 6.66663 2.06735 6.57883 1.91107 6.42255C1.75479 6.26627 1.66699 6.05431 1.66699 5.83329C1.66699 5.61228 1.75479 5.40032 1.91107 5.24404C2.06735 5.08776 2.27931 4.99996 2.50033 4.99996H6.66699ZM12.5003 9.99996C12.5003 9.77894 12.4125 9.56698 12.2562 9.4107C12.1 9.25442 11.888 9.16663 11.667 9.16663C11.446 9.16663 11.234 9.25442 11.0777 9.4107C10.9215 9.56698 10.8337 9.77894 10.8337 9.99996V13.3333C10.8337 13.5543 10.9215 13.7663 11.0777 13.9225C11.234 14.0788 11.446 14.1666 11.667 14.1666C11.888 14.1666 12.1 14.0788 12.2562 13.9225C12.4125 13.7663 12.5003 13.5543 12.5003 13.3333V9.99996ZM8.33366 9.16663C8.11265 9.16663 7.90068 9.25442 7.7444 9.4107C7.58812 9.56698 7.50033 9.77894 7.50033 9.99996V13.3333C7.50033 13.5543 7.58812 13.7663 7.7444 13.9225C7.90068 14.0788 8.11265 14.1666 8.33366 14.1666C8.55467 14.1666 8.76663 14.0788 8.92291 13.9225C9.07919 13.7663 9.16699 13.5543 9.16699 13.3333V9.99996C9.16699 9.77894 9.07919 9.56698 8.92291 9.4107C8.76663 9.25442 8.55467 9.16663 8.33366 9.16663Z" fill="#FF1A1A"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" modal_end">
+                    <form class="modal_end_buttons">
+                        <input type="text" placeholder="промокод">
+                        <button type="submit" role="button">Применить</button>
+                    </form>
+                    <div class="modal_end_link">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 12H4M4 12L10 6M4 12L10 18" stroke="#7D17FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>Продолжить покупки
+                        </a>
+                        <h3>к оплате: <span>5980₽</span></h3>
+                    </div>
+                    <div class="modal_end_btn">
+                        <button type="submit">Оформить заказ
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                                <path d="M6.26582 6.922C5.15382 7.844 4.86182 9.405 4.27582 12.525C3.45282 16.915 3.04182 19.109 4.24182 20.555C5.44182 22 7.67382 22 12.1388 22H12.8608C17.3258 22 19.5588 22 20.7578 20.555C21.9578 19.109 21.5448 16.915 20.7228 12.525C20.1368 9.405 19.8448 7.844 18.7328 6.922M18.7348 6.922C17.6238 6 16.0358 6 12.8598 6H12.1378C8.96282 6 7.37482 6 6.26382 6.922" stroke="white" stroke-width="1.5"/>
+                                <path opacity="0.5" d="M10.5 14.3L11.833 15.5L14.5 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path opacity="0.5" d="M9.5 6V5C9.5 4.20435 9.81607 3.44129 10.3787 2.87868C10.9413 2.31607 11.7044 2 12.5 2C13.2956 2 14.0587 2.31607 14.6213 2.87868C15.1839 3.44129 15.5 4.20435 15.5 5V6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
-            <div class="header_wrapper">
+            <div class="header_wrapper" data-aos="fade-down" data-aos-duration="700">
                 <a href="#" class="logo">
                     <img src="./images/header_logo.png" alt="">
                 </a>
@@ -33,7 +118,7 @@
                         <div class="header_icon_shop_number">2</div>
                         <img src="./images/header_icon_love.svg" alt="">
                     </button>
-                    <button class="header_icon_shop" role="button">
+                    <button class="header_icon_shop" role="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                         <div class="header_icon_shop_number">2</div>
                         <img src="./images/header_icon_shop.svg" alt="">
                     </button>
@@ -51,7 +136,7 @@
             </div>
         </div>
     </header>
-    <div id="contacts">
+    <div id="contacts"  data-aos="flip-left" data-aos-duration="900">
         <section class="contacts">
             <div class="container">
                 <div class="contact_wrapper">
@@ -80,7 +165,7 @@
     </div>
     <footer>
         <div class="container">
-            <div class="footer_wrapper">
+            <div class="footer_wrapper" data-aos="fade-down" data-aos-duration="700">
                 <div class="logo_newtwork">
                     <a href="#" class="logo">
                         <img src="./images/footer_logo.png" alt="">
@@ -103,6 +188,8 @@
 
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- aos js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js link -->
     <script src="./js/app.js"></script>
 </body>

@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aos link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- normalize link -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- bootstrap link -->
@@ -15,7 +17,7 @@
     <div id="account">
         <div class="container">
             <div class="row account_wrapper">
-                <div class="col-lg-4">
+                <div class="col-lg-4 account_left_in" data-aos="fade-right" data-aos-duration="700">
                     <div class="account_left">
                         <a class="logo" href="#">
                             <img src="./images/account_logo.png" alt="">
@@ -24,13 +26,16 @@
                             <a class="account_active" href="#">история покупок</a>
                             <a href="#">служба поддержки</a>
                         </div>
-                        <button class="account_btn" type="button" role="button">Выйти<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path opacity="0.5" d="M9.052 4.5C9 5.078 9 5.804 9 6.722V17.278C9 18.196 9 18.922 9.052 19.5H8C5.643 19.5 4.464 19.5 3.732 18.768C3 18.035 3 16.857 3 14.5V9.5C3 7.143 3 5.964 3.732 5.232C4.464 4.5 5.643 4.5 8 4.5H9.052Z" fill="#FF4866"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.707 2.40894C9 3.03594 9 4.18294 9 6.47594V17.5239C9 19.8169 9 20.9639 9.707 21.5909C10.414 22.2179 11.495 22.0299 13.657 21.6529L15.987 21.2469C18.381 20.8289 19.578 20.6199 20.289 19.7419C21 18.8629 21 17.5929 21 15.0519V8.94794C21 6.40794 21 5.13794 20.29 4.25894C19.578 3.38094 18.38 3.17194 15.986 2.75494L13.658 2.34794C11.496 1.97094 10.415 1.78294 9.708 2.40994L9.707 2.40894ZM12.75 10.9539C12.75 10.5199 12.414 10.1689 12 10.1689C11.586 10.1689 11.25 10.5199 11.25 10.9529V13.0469C11.25 13.4799 11.586 13.8309 12 13.8309C12.414 13.8309 12.75 13.4799 12.75 13.0469V10.9529V10.9539Z" fill="#FF4866"/>
-                          </svg></button>
+                        <div class="account_btns">
+                            <button class="account_btn" type="button" role="button">Выйти<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path opacity="0.5" d="M9.052 4.5C9 5.078 9 5.804 9 6.722V17.278C9 18.196 9 18.922 9.052 19.5H8C5.643 19.5 4.464 19.5 3.732 18.768C3 18.035 3 16.857 3 14.5V9.5C3 7.143 3 5.964 3.732 5.232C4.464 4.5 5.643 4.5 8 4.5H9.052Z" fill="#FF4866"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.707 2.40894C9 3.03594 9 4.18294 9 6.47594V17.5239C9 19.8169 9 20.9639 9.707 21.5909C10.414 22.2179 11.495 22.0299 13.657 21.6529L15.987 21.2469C18.381 20.8289 19.578 20.6199 20.289 19.7419C21 18.8629 21 17.5929 21 15.0519V8.94794C21 6.40794 21 5.13794 20.29 4.25894C19.578 3.38094 18.38 3.17194 15.986 2.75494L13.658 2.34794C11.496 1.97094 10.415 1.78294 9.708 2.40994L9.707 2.40894ZM12.75 10.9539C12.75 10.5199 12.414 10.1689 12 10.1689C11.586 10.1689 11.25 10.5199 11.25 10.9529V13.0469C11.25 13.4799 11.586 13.8309 12 13.8309C12.414 13.8309 12.75 13.4799 12.75 13.0469V10.9529V10.9539Z" fill="#FF4866"/>
+                              </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 account_right_in" data-aos="fade-left" data-aos-duration="700">
                     <div class="account_main_top">
                         <div class="account_search">
                             <input id="search" type="search" placeholder="Начните поиск...">
@@ -44,6 +49,75 @@
                             </svg>
                         </button>
                     </div>
+                    <div class="row account_card">
+                        <div class="col-lg-6 account_card_left">
+                            <div class="account_left_text">
+                                <h5>дата покупки:</h5>
+                                <h6>10 августа 2023</h6>
+                                <button class="account_card_left_btn" type="button" role="button">Открыть отчёт</button>
+                            </div>
+                            <img src="./images/account_img1.png" alt="">
+                        </div>
+                        <div class="col-lg-6 account_card_right">
+                            <div class="account_right_text_top">
+                                <div>
+                                    <h4>CEF West China 2023</h4>
+                                    <span>China Electronics Fair West Show</span>
+                                    <button type="button" role="button">Тема выставки</button>
+                                </div>
+                                <div>
+                                    <h6>Сумма:</h6>
+                                    <h5>1990₽</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row account_card">
+                        <div class="col-lg-6 account_card_left">
+                            <div class="account_left_text">
+                                <h5>дата покупки:</h5>
+                                <h6>5 августа 2023</h6>
+                                <button class="account_card_left_btn" type="button" role="button">Открыть отчёт</button>
+                            </div>
+                            <img src="./images/account_img1.png" alt="">
+                        </div>
+                        <div class="col-lg-6 account_card_right">
+                            <div class="account_right_text_top">
+                                <div>
+                                    <h4>CEF West China 2023</h4>
+                                    <span>China Electronics Fair West Show</span>
+                                    <button type="button" role="button">Тема выставки</button>
+                                </div>
+                                <div>
+                                    <h6>Сумма:</h6>
+                                    <h5>1990₽</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row account_card">
+                        <div class="col-lg-6 account_card_left">
+                            <div class="account_left_text">
+                                <h5>дата покупки:</h5>
+                                <h6>3 августа 2023</h6>
+                                <button class="account_card_left_btn" type="button" role="button">Открыть отчёт</button>
+                            </div>
+                            <img src="./images/account_img1.png" alt="">
+                        </div>
+                        <div class="col-lg-6 account_card_right">
+                            <div class="account_right_text_top">
+                                <div>
+                                    <h4>CEF West China 2023</h4>
+                                    <span>China Electronics Fair West Show</span>
+                                    <button type="button" role="button">Тема выставки</button>
+                                </div>
+                                <div>
+                                    <h6>Сумма:</h6>
+                                    <h5>1990₽</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -51,6 +125,8 @@
 
     <!-- bootstrap js link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- aos js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- js link -->
     <script src="./js/app.js"></script>
 </body>

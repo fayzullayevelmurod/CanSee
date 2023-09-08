@@ -16,6 +16,10 @@ a {
   color: inherit;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 span,
 button,
 a,
@@ -185,6 +189,228 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   display: none;
 }
 
+.modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 640px !important;
+  min-width: 640px !important;
+  border-radius: 30px;
+}
+.modal .modal-dialog .modal-content {
+  width: 100%;
+  padding: 0;
+}
+.modal .modal-dialog .modal-content .modal_top {
+  border-bottom: 1px solid #DBDBDB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 35px;
+}
+.modal .modal-dialog .modal-content .modal_top .btn-close {
+  background: none;
+}
+.modal .modal-dialog .modal-content .modal_top .btn-close:focus {
+  box-shadow: none;
+}
+.modal .modal-dialog .modal-content .modal_top h4 {
+  color: #444;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.04px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.modal .modal-dialog .modal-content .modal_top button {
+  border: none;
+  background-color: transparent;
+  color: #444;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.modal .modal-dialog .modal-content .modal_top button svg {
+  margin-left: 15px;
+}
+.modal .modal-dialog .modal-content .modal_center {
+  padding: 25px 35px;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card {
+  border-bottom: 1px solid #DBDBDB;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card img {
+  width: 133px;
+  height: 133px;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card h6 {
+  color: #444;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card p {
+  max-width: 210px;
+  color: #A8A8A8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card button {
+  margin-top: 29px;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 15px;
+  border: 1px solid #E8E8E8;
+  color: #A8A8A8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card .modal_content_end h5 {
+  margin-bottom: 0;
+  color: #A8A8A8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card .modal_content_end h6 {
+  margin-bottom: 0;
+  color: #444;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.modal .modal-dialog .modal-content .modal_center .modal_card .modal_end .modal_delete {
+  margin-top: 62px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #F9F9F9;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_buttons {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_buttons input {
+  padding: 15px 20px;
+  width: 100%;
+  height: 50px;
+  color: #A8A8A8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  border: 1px solid var(--dop-color, #A8A8A8);
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_buttons input:focus {
+  outline: none;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_buttons button {
+  width: 187px;
+  border-radius: 15px;
+  background: #F9F9F9;
+  height: 50px;
+  border: none;
+  color: #7D17FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_link {
+  margin-top: 22px;
+  padding: 0 40px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_link a {
+  color: #7D17FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_link a svg {
+  margin-right: 5px;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_link h3 {
+  color: #A8A8A8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_link h3 span {
+  color: #444;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+.modal .modal-dialog .modal-content .modal_end .modal_end_btn {
+  padding: 23px 15px 15px 15px;
+}
+.modal .modal-dialog .modal-content .modal_end button {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  border-radius: 15px;
+  background: #7D17FF;
+  height: 50px;
+  border: none;
+  width: 100%;
+  transition: 0.3s linear;
+}
+.modal .modal-dialog .modal-content .modal_end button:hover {
+  transform: translateY(-5px);
+}
+.modal .modal-dialog .modal-content .modal_end button svg {
+  margin-left: 5px;
+}
+
 #main .home {
   margin-top: 200px;
   margin-bottom: 231px;
@@ -233,9 +459,29 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   display: flex;
   justify-content: center;
 }
+@keyframes example {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
 #main .home .home_wrapper .home_right .home_right_wrapper {
   display: inline-block;
   position: relative;
+  animation: example 22s linear infinite;
+}
+@keyframes example2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+#main .home .home_wrapper .home_right .home_right_wrapper .example_main {
+  animation: example2 22s linear infinite;
 }
 #main .home .home_wrapper .home_right .home_right_wrapper .home_img_one {
   position: absolute;
@@ -277,14 +523,15 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   font-weight: 300;
 }
 #main .advantages .advantages_wrapper {
-  gap: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 #main .advantages .advantages_wrapper .adventages_line {
-  max-width: 550px;
   padding-top: 20px;
   border-top: 1px solid #C7C7C7;
 }
 #main .advantages .advantages_wrapper .adventages_left {
+  position: relative;
   margin-bottom: 30px;
 }
 #main .advantages .advantages_wrapper .adventages_left h5 {
@@ -364,7 +611,6 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   letter-spacing: -0.32px;
 }
 #main .advantages .advantages_wrapper .adventages_right p {
-  max-width: 550px;
   margin-bottom: 10px;
   color: #A8A8A8;
   font-family: "Inter", sans-serif;
@@ -376,6 +622,76 @@ header .header_wrapper .header_in .dropdown-toggle::after {
 }
 #main .advantages .advantages_wrapper .adventages_right p b {
   color: #444;
+}
+@keyframes example3 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+#main .advantages .advantages_wrapper .adventages_right .adventages_right_img {
+  margin-left: 50px;
+  display: inline-block;
+  position: relative;
+  animation: example3 12s linear infinite;
+}
+@keyframes example_mini {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+#main .advantages .advantages_wrapper .adventages_right .adventages_right_img .mini_img_rotate {
+  animation: example_mini 10s linear infinite;
+}
+#main .advantages .advantages_wrapper .adventages_right .adventages_right_img .mini_img {
+  position: absolute;
+  left: -48px;
+  bottom: -36px;
+}
+#main .advantages .advantages_wrapper .adventages_animation {
+  display: flex;
+  justify-content: end;
+}
+@keyframes example3 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+#main .advantages .advantages_wrapper .adventages_animation .adventages_right_img {
+  margin-right: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  animation: example3 12s linear infinite;
+}
+#main .advantages .advantages_wrapper .adventages_animation .mini_img_two {
+  position: absolute;
+  right: -32px;
+  bottom: 42px;
+}
+#main .advantages .advantages_wrapper .adventages_animation .mini_img_three {
+  position: absolute;
+  right: -78px;
+  top: -41px;
+}
+@keyframes example_mini {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+#main .advantages .advantages_wrapper .adventages_animation .mini_img_rotate {
+  animation: example_mini 10s linear infinite;
 }
 #main .video {
   margin: 130px 0;
@@ -1844,6 +2160,10 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   gap: 8px;
 }
 #upcoming .report_cards .report_card .upcoming_btns button {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
   background-color: transparent;
   border-radius: 10px;
   border: 1px solid #E8E8E8;
@@ -1942,6 +2262,9 @@ header .header_wrapper .header_in .dropdown-toggle::after {
 }
 #upcoming .cards_pagination .pagination_active span {
   color: #444 !important;
+}
+#upcoming .topical {
+  margin-bottom: 130px;
 }
 #upcoming .topical h4 {
   margin-bottom: 30px;
@@ -2495,20 +2818,23 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   width: 100%;
 }
 
-#account .account_wrapper .account_left {
+#account .account_wrapper .account_left_in {
+  padding-right: 0;
   border-right: 1px solid #E8E8E8;
+}
+#account .account_wrapper .account_left_in .account_left {
   background: #FAFAFA;
 }
-#account .account_wrapper .account_left .logo {
+#account .account_wrapper .account_left_in .account_left .logo {
   width: 100%;
   border-bottom: 1px solid #E8E8E8;
   padding: 30px;
 }
-#account .account_wrapper .account_left .account_menu {
+#account .account_wrapper .account_left_in .account_left .account_menu {
   border-bottom: 1px solid #E8E8E8;
   padding: 50px 30px;
 }
-#account .account_wrapper .account_left .account_menu a {
+#account .account_wrapper .account_left_in .account_left .account_menu a {
   margin-bottom: 10px;
   color: #444;
   font-size: 22px;
@@ -2518,7 +2844,7 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   letter-spacing: -0.88px;
   text-transform: uppercase;
 }
-#account .account_wrapper .account_left .account_menu .account_active {
+#account .account_wrapper .account_left_in .account_left .account_menu .account_active {
   color: #7D17FF;
   font-size: 22px;
   font-style: normal;
@@ -2527,10 +2853,12 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   letter-spacing: -0.88px;
   text-transform: uppercase;
 }
-#account .account_wrapper .account_left .account_btn {
+#account .account_wrapper .account_left_in .account_left .account_btns {
+  padding: 0 20px;
+}
+#account .account_wrapper .account_left_in .account_left .account_btns .account_btn {
   margin-top: 32px;
-  margin-left: 30px;
-  width: 345px;
+  width: 100%;
   height: 50px;
   color: #FF4866;
   font-size: 16px;
@@ -2542,8 +2870,162 @@ header .header_wrapper .header_in .dropdown-toggle::after {
   border-radius: 15px;
   background: rgba(255, 232, 235, 0.5);
 }
-#account .account_wrapper .account_left .account_btn svg {
+#account .account_wrapper .account_left_in .account_left .account_btns .account_btn svg {
   margin-left: 6px;
+}
+#account .account_wrapper .account_right_in {
+  background-color: #fff;
+  padding: 0 40px;
+}
+#account .account_wrapper .account_main_top {
+  margin-top: 76px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+#account .account_wrapper .account_main_top .account_search {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #E8E8E8;
+}
+#account .account_wrapper .account_main_top .account_search input {
+  width: 93%;
+  background-color: transparent;
+  padding: 0 20px;
+  height: 100%;
+  border: none;
+  color: #A8A8A8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+#account .account_wrapper .account_main_top .account_search input:focus {
+  outline: none;
+}
+#account .account_wrapper .account_main_top .account_search label {
+  cursor: pointer;
+  margin-right: 20px;
+}
+#account .account_wrapper .account_main_top .account_btn {
+  background-color: transparent;
+  padding: 15px 20px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #E8E8E8;
+  color: #444;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+#account .account_wrapper .account_main_top .account_btn:active svg {
+  transform: rotate(180deg);
+}
+#account .account_wrapper .account_main_top .account_btn svg {
+  transition: 0.3s linear;
+  margin-left: 6px;
+}
+#account .account_wrapper .account_card {
+  border-top: 1px solid #E8E8E8;
+  padding: 25px 0;
+}
+#account .account_wrapper .account_card .account_card_left {
+  display: flex;
+  justify-content: space-between;
+}
+#account .account_wrapper .account_card .account_card_left h5 {
+  color: #A8A8A8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+#account .account_wrapper .account_card .account_card_left h6 {
+  color: #444;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+}
+#account .account_wrapper .account_card .account_card_left .account_card_left_btn {
+  padding: 16px 25px;
+  border: none;
+  border-radius: 15px;
+  background: #F9F9F9;
+  color: #7D17FF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+#account .account_wrapper .account_card .account_card_right .account_right_text_top {
+  display: flex;
+}
+#account .account_wrapper .account_card .account_card_right .account_right_text_top h4 {
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+#account .account_wrapper .account_card .account_card_right .account_right_text_top span {
+  color: #A8A8A8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  margin-bottom: 48px;
+}
+#account .account_wrapper .account_card .account_card_right .account_right_text_top button {
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid #E8E8E8;
+  color: #A8A8A8;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+#account .account_wrapper .account_card .account_card_right .account_right_text_top h6 {
+  color: #A8A8A8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+}
+#account .account_wrapper .account_card .account_card_right .account_right_text_top h5 {
+  color: #444;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
 }
 
 footer {
